@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Falke Tethys</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" type="image/x-icon" href="assets/LogoLarge.png" />
+        <!-- Fonts -->
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Anta&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        /> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+        <!-- Scripts -->
+        <script defer type="text/javascript">
+            window.addEventListener("scroll", transparentHeader);
+            function transparentHeader() {
+                document.getElementById("header").classList.toggle("sticky", window.scrollY > 0);
+            }
+
+            window.addEventListener("load", onLoadHero);
+
+            function onLoadHero() {
+                let heroHeader = document.getElementById("hero-header");
+                let heroP1 = document.getElementById("hero-p1");
+                let heroP2 = document.getElementById("hero-p2");
+                let heroP3 = document.getElementById("hero-p3");
+
+                heroHeader.style.color = "whitesmoke";
+                heroP1.style.color = "whitesmoke";
+                heroP2.style.color = "whitesmoke";
+                heroP3.style.color = "whitesmoke";
+            }
+        </script>
+    </head>
+    <body>
+        <div id="page-container">
+            <header id="header">
+                <nav id="nav-bar">
+                    <div>
+                        <a href="#WHAT_WE_DO" class="nav-link">WHAT WE DO</a>
+                    </div>
+                    <div>
+                        <a href="#WHO_WE_ARE" class="nav-link">WHO WE ARE</a>
+                    </div>
+                    <div>
+                        <a href="#NEWSLETTER" class="nav-link">NEWSLETTER</a>
+                    </div>
+                </nav>
+
+                <a href="#">
+                    <img src="assets/Falke Tethys Header White.png" alt="Falke Tethys Logo" id="header-img" />
+                </a>
+
+                <nav id="nav-bar-right">
+                    <div>
+                        <a href="#SHIPBUILDING" class="nav-link">SHIPBUILDING</a>
+                    </div>
+                    <div>
+                        <a href="#INVESTORS" class="nav-link">INVESTORS</a>
+                    </div>
+                    <!-- <div>
+                        <a href="" class="nav-link">SUPPLIERS</a>
+                    </div> -->
+                </nav>
+            </header>
+
+            <div class="video-container">
+                <video autoplay loop muted plays-inline id="video">
+                    <source src="assets/Nebulous Trailer Cut Asset.mp4" type="video/mp4" />
+                </video>
+            </div>
+
+            <div class="hero">
+                <header id="hero-header">DRIVING THE ADVANTAGE.</header>
+                <h6 id="hero-p1">SHIPBUILDING</h6>
+                <h6 id="hero-p2">FUSION DRIVE SYSTEMS</h6>
+                <h6 id="hero-p3">ADVANCED WEAPON SYSTEMS</h6>
+            </div>
+
+            <div id="WHAT_WE_DO">
+                <div class="section-banner">
+                    <h1>DELIVERING UNPARALLELED EXCELLENCE</h1>
+                    <h1>IN THE VOID.</h1>
+                </div>
+
+                <div class="section-desc">
+                    <h3>430 YEARS OF HISTORY</h3>
+                    <h3>BUILDS THE MAJORITY OF THE S.A. NAVY FLEET</h3>
+                    <h3>ALL DOMAINS</h3>
+                </div>
+
+                <div class="section-text-right">
+                    <div class="section-text-container">
+                        <h2>WHAT WE DO</h2>
+                        <p>
+                            Falke Tethys Drive Yards is an interstellar, all-domain defense provider, delivering powerful starships, fusion drives,
+                            and defense solutions that safeguard the Shelter Archipelago and beyond. Headquartered in Solomon, we are united by our
+                            mission of more than 430-years in service of the Alliance, driving the advantage for our customers to protect peace and
+                            freedom within the Cluster.
+                        </p>
+                    </div>
+                    <div class="section-text-container"></div>
+                </div>
+            </div>
+
+            <div id="WHO_WE_ARE">
+                <div class="section-banner">
+                    <h1>430 YEARS OF</h1>
+                    <h1>SERVICE</h1>
+                </div>
+
+                <div class="section-desc">
+                    <h3>555.000 EMPLOYEES</h3>
+                    <h3>7000 SUPPLIERS</h3>
+                    <h3>400+ YEAR HISTORY</h3>
+                    <h3>EIGHT SHIPYARDS</h3>
+                    <h3>ONE MISSION</h3>
+                </div>
+
+                <div class="section-text">
+                    <div class="section-text-container">
+                        <h2>WHO WE ARE</h2>
+                        <p>
+                            FTDY is Shelter Alliance's largest shipbuilder and an interstellar, all-domain defense provider. With a more than 400-year
+                            history of advancing S.A intersystem defense, we are united by our mission in service of the alliance, creating the
+                            advantage for our customers to protect peace and freedom around the cluster and Shelter Archipelago. FTDY's diverse
+                            workforce includes skilled tradespeople; artificial intelligence, machine learning (AI/ ML) experts; engineers;
+                            technologists; scientists; logistics experts; and business professionals.
+                        </p>
+                    </div>
+                    <div class="section-text-container"></div>
+                </div>
+            </div>
+
+            <div id="NEWSLETTER">
+                <h2>SIGN UP TO OUR NEWSLETTER</h2>
+                <p>To be notified of future products, career opportunities, and changes to our stock pricing.</p>
+                <!-- <p>DISCLAIMER : This form doesn't actually do anything it's just a mockup.</p> -->
+
+                <form action="#" id="form">
+                    <input type="email" id="email" name="email" placeholder="Example@shelternet.com" />
+                    <input type="submit" id="submit" value="SIGN UP" class="btn" />
+                </form>
+            </div>
+
+            <div id="SHIPBUILDING">
+                <header>SHIPBUILDING HIGHLIGHTS</header>
+                <h3>AXFORD CLASS HEAVY CRUISER</h3>
+                <h3>RAINES CLASS FRIGATE</h3>
+                <h3>SOLOMON CLASS BATTLESHIP</h3>
+            </div>
+            <div id="INVESTORS">
+                <header>OUR INVESTORS</header>
+
+                <p>
+                    As Shelter's largest military shipbuilder, and with a more than a 430-year history of advancing Shelter Alliance interstellar
+                    security, FTDY delivers critical capabilities extending from warships to atmospheric craft, fusion power, ISR, particle beam, and
+                    synthetic training for the Alliance Navy and other security forces within the Shelter Alliance. Headquartered in Solomon, FTDY's
+                    workforce is more than 500,000 strong.
+                </p>
+            </div>
+            <div id="footer"></div>
+        </div>
+    </body>
+</html>
