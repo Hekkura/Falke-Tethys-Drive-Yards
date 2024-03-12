@@ -1,0 +1,26 @@
+.hero-subpage {
+    background-color: var(--dark-transparent);
+
+    color: var(--white);
+
+    z-index: 2;
+    height: 100vh;
+    padding-top: 60vh;
+}
+
+#axford-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.25) 5%, black 120%), url("assets/AxfordBG5.png") center center fixed;
+    background-size: cover;
+}
+#raines-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.25) 5%, black 120%), url("assets/RainesBG12.png") center center fixed;
+    background-size: cover;
+}
+#solomon-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.25) 5%, black 120%), url("assets/SolomonBG2.png") center center fixed;
+    background-size: cover;
+}
+#vauxhall-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.25) 5%, black 120%), url("assets/VauxhallBG2.png") center center fixed;
+    background-size: cover;
+}

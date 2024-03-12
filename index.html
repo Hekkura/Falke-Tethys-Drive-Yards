@@ -9,12 +9,6 @@
         <link rel="stylesheet" href="styles.css" />
         <link rel="icon" type="image/x-icon" href="assets/LogoLarge.png" />
         <!-- Fonts -->
-        <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Anta&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet"
-        /> -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
@@ -39,12 +33,18 @@
                 heroP2.style.color = "whitesmoke";
                 heroP3.style.color = "whitesmoke";
             }
+
+            let shipbuildingBG = (image) => {
+                let shipbuilding = document.getElementById("SHIPBUILDING");
+                shipbuilding.style.background = `linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(${image}) center center fixed`;
+                shipbuilding.style.backgroundSize = "cover";
+            };
         </script>
     </head>
     <body>
         <div id="page-container">
             <header id="header">
-                <nav id="nav-bar">
+                <nav id="nav-bar-left">
                     <div>
                         <a href="#WHAT_WE_DO" class="nav-link">WHAT WE DO</a>
                     </div>
@@ -67,9 +67,6 @@
                     <div>
                         <a href="#INVESTORS" class="nav-link">INVESTORS</a>
                     </div>
-                    <!-- <div>
-                        <a href="" class="nav-link">SUPPLIERS</a>
-                    </div> -->
                 </nav>
             </header>
 
@@ -79,14 +76,14 @@
                 </video>
             </div>
 
-            <div class="hero">
+            <div id="hero" class="main-section">
                 <header id="hero-header">DRIVING THE ADVANTAGE.</header>
                 <h6 id="hero-p1">SHIPBUILDING</h6>
                 <h6 id="hero-p2">FUSION DRIVE SYSTEMS</h6>
                 <h6 id="hero-p3">ADVANCED WEAPON SYSTEMS</h6>
             </div>
 
-            <div id="WHAT_WE_DO">
+            <div id="WHAT_WE_DO" class="main-section">
                 <div class="section-banner">
                     <h1>DELIVERING UNPARALLELED EXCELLENCE</h1>
                     <h1>IN THE VOID.</h1>
@@ -112,7 +109,7 @@
                 </div>
             </div>
 
-            <div id="WHO_WE_ARE">
+            <div id="WHO_WE_ARE" class="main-section">
                 <div class="section-banner">
                     <h1>430 YEARS OF</h1>
                     <h1>SERVICE</h1>
@@ -141,10 +138,10 @@
                 </div>
             </div>
 
-            <div id="NEWSLETTER">
+            <div id="NEWSLETTER" class="main-section">
                 <h2>SIGN UP TO OUR NEWSLETTER</h2>
                 <p>To be notified of future products, career opportunities, and changes to our stock pricing.</p>
-                <!-- <p>DISCLAIMER : This form doesn't actually do anything it's just a mockup.</p> -->
+                <h5>DISCLAIMER : This form doesn't actually do anything it's just a mockup.</h5>
 
                 <form action="#" id="form">
                     <input type="email" id="email" name="email" placeholder="Example@shelternet.com" />
@@ -152,23 +149,100 @@
                 </form>
             </div>
 
-            <div id="SHIPBUILDING">
+            <div id="SHIPBUILDING" class="main-section">
                 <header>SHIPBUILDING HIGHLIGHTS</header>
-                <h3>AXFORD CLASS HEAVY CRUISER</h3>
-                <h3>RAINES CLASS FRIGATE</h3>
-                <h3>SOLOMON CLASS BATTLESHIP</h3>
-            </div>
-            <div id="INVESTORS">
-                <header>OUR INVESTORS</header>
 
-                <p>
-                    As Shelter's largest military shipbuilder, and with a more than a 430-year history of advancing Shelter Alliance interstellar
-                    security, FTDY delivers critical capabilities extending from warships to atmospheric craft, fusion power, ISR, particle beam, and
-                    synthetic training for the Alliance Navy and other security forces within the Shelter Alliance. Headquartered in Solomon, FTDY's
-                    workforce is more than 500,000 strong.
-                </p>
+                <div class="ship-classes">
+                    <div class="ship-class" id="axford" onmouseover='shipbuildingBG("assets/AxfordBG2.png")'>
+                        <a href="axford.html" class="ship-class-link">
+                            <h3>AXFORD CLASS HEAVY CRUISER</h3>
+                            <h5>Discover More ></h5>
+                        </a>
+                    </div>
+                    <div class="ship-class" id="raines" onmouseover='shipbuildingBG("assets/RainesBG1.png")'>
+                        <a href="raines.html" class="ship-class-link">
+                            <h3>RAINES CLASS FRIGATE</h3>
+                            <h5>Discover More ></h5>
+                        </a>
+                    </div>
+                    <div class="ship-class" id="solomon" onmouseover='shipbuildingBG("assets/SolomonBG2.png")'>
+                        <a href="solomon.html" class="ship-class-link">
+                            <h3>SOLOMON CLASS BATTLESHIP</h3>
+                            <h5>Discover More ></h5>
+                        </a>
+                    </div>
+                    <div class="ship-class" id="vauxhall" onmouseover='shipbuildingBG("assets/VauxhallBG3.png")'>
+                        <a href="vauxhall.html" class="ship-class-link">
+                            <h3>VAUXHALL CLASS LIGHT CRUISER</h3>
+                            <h5>Discover More ></h5>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div id="footer"></div>
+
+            <div id="INVESTORS" class="main-section">
+                <div class="section-text">
+                    <div class="section-text-container">
+                        <header>OUR INVESTORS</header>
+                        <p>
+                            As Shelter's largest military shipbuilder, and with a more than a 430-year history of advancing Shelter Alliance
+                            interstellar security, FTDY delivers critical capabilities extending from warships to atmospheric craft, fusion power,
+                            ISR, particle beam, and synthetic training for the Alliance Navy and other security forces within the Shelter Alliance.
+                            Headquartered in Solomon, FTDY's workforce is more than 500,000 strong.
+                        </p>
+
+                        <div class="investor-figures">
+                            <figure>
+                                <h1>203.4 B</h1>
+                                <h4>IY 477 REVENUE</h4>
+                            </figure>
+                            <figure>
+                                <h1>24%</h1>
+                                <h4>YEARLY PROFITS</h4>
+                            </figure>
+                            <figure>
+                                <h1>543.210</h1>
+                                <h4>EMPLOYEES</h4>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="section-text-container"></div>
+                </div>
+            </div>
+
+            <div id="footer" class="main-section">
+                <div class="footer-column">
+                    <img src="assets/Falke Tethys AssetsHeader.png" alt="" />
+                </div>
+                <div class="footer-column">
+                    <h4>Terms and Policies</h4>
+                    <h4>Home Port</h4>
+                    <h4>Falke Tethys Store</h4>
+                </div>
+                <div class="footer-column">
+                    <h4>Navigation</h4>
+                    <a href="#">Top</a>
+                    <a href="#WHAT_WE_DO">What We Do</a>
+                    <a href="#WHO_WE_ARE">Who We Are</a>
+                    <a href="#NEWSLETTER">Newsletter</a>
+                    <a href="#SHIPBUILDING">Shipbuilding Highlights</a>
+                    <a href="#INVESTORS">Investors</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Falke Tethys Corporate HQ</h4>
+                    <p>Boardman, Solomon</p>
+
+                    <br />
+                    <br />
+                    <br />
+
+                    <h5>Falke Tethys Drive Yards Est. 3 IY</h5>
+                    <h5>Made by @Hekkura</h5>
+                    <br />
+                    <h5>All footage and media acquired from Falke Tethys internal field tests and simulations.</h5>
+                </div>
+            </div>
         </div>
     </body>
 </html>

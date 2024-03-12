@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Axford-Class Heavy Cruiser</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="styles-sub.css" />
+        <link rel="icon" type="image/x-icon" href="assets/LogoLarge.png" />
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+        <!-- Scripts -->
+        <script defer type="text/javascript">
+            window.addEventListener("scroll", transparentHeader);
+            function transparentHeader() {
+                document.getElementById("header").classList.toggle("sticky", window.scrollY > 0);
+            }
+
+            window.addEventListener("load", onLoadHero);
+
+            function onLoadHero() {
+                let heroHeader = document.getElementById("hero-header");
+                let heroP1 = document.getElementById("hero-p1");
+                let heroP2 = document.getElementById("hero-p2");
+                let heroP3 = document.getElementById("hero-p3");
+
+                heroHeader.style.color = "whitesmoke";
+                heroP1.style.color = "whitesmoke";
+                heroP2.style.color = "whitesmoke";
+                heroP3.style.color = "whitesmoke";
+            }
+        </script>
+    </head>
+    <body>
+        <div id="page-container">
+            <header id="header">
+                <nav id="nav-bar-left">
+                    <div>
+                        <a href="index.html" class="nav-link">WHAT WE DO</a>
+                    </div>
+                    <div>
+                        <a href="index.htmlE" class="nav-link">WHO WE ARE</a>
+                    </div>
+                    <div>
+                        <a href="index.html" class="nav-link">NEWSLETTER</a>
+                    </div>
+                </nav>
+
+                <a href="index.html">
+                    <img src="assets/Falke Tethys Header White.png" alt="Falke Tethys Logo" id="header-img" />
+                </a>
+
+                <nav id="nav-bar-right">
+                    <div>
+                        <a href="index.html" class="nav-link">SHIPBUILDING</a>
+                    </div>
+                    <div>
+                        <a href="index.html" class="nav-link">INVESTORS</a>
+                    </div>
+                </nav>
+            </header>
+            <div id="axford-hero" class="main-section hero-subpage">
+                <header id="hero-header">A MODERN FORCE OF NATURE.</header>
+                <h3 id="hero-p1">AXFORD-CLASS HEAVY CRUISER</h3>
+            </div>
+        </div>
+    </body>
+</html>
