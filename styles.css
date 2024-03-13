@@ -449,6 +449,59 @@ input[type="submit"]:hover {
     max-width: 100%;
 }
 
+/* ============================== */
+/* SUBPAGE STYLES */
+
+.hero-subpage {
+    background-color: var(--dark-transparent);
+
+    color: var(--white);
+
+    z-index: 2;
+    min-height: 100vh;
+    padding-top: 60vh;
+    padding-bottom: 10vh;
+}
+
+.subpage-desc {
+    min-height: 40vh;
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+    color: var(--white);
+}
+
+#axford-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.25) 5%, black 105%), url("assets/AxfordBG5.png") center center fixed;
+    background-size: cover;
+}
+#raines-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.25) 5%, black 105%), url("assets/RainesBG12.png") center center fixed;
+    background-size: cover;
+}
+#solomon-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.25) 5%, black 105%), url("assets/SolomonBG1.png") center center fixed;
+    background-size: cover;
+}
+#vauxhall-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.25) 5%, black 105%), url("assets/VauxhallBG2.png") center center fixed;
+    background-size: cover;
+}
+
+.subpage-desc .section-desc h3 {
+    margin-bottom: 1rem;
+}
+
+.subpage-desc .section-desc h3::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: -128px;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1400px) {
