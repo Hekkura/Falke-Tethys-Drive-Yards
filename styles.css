@@ -468,6 +468,9 @@ input[type="submit"]:hover {
     padding-top: 20vh;
     padding-bottom: 10vh;
     color: var(--white);
+
+    padding-left: 128px;
+    padding-right: 128px;
 }
 
 #axford-hero {
@@ -501,7 +504,7 @@ input[type="submit"]:hover {
     top: 50%;
     left: -128px;
 }
-
+/* ============================== */ /* ============================== */
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1400px) {
@@ -533,7 +536,8 @@ input[type="submit"]:hover {
         padding: 0px 48px;
         gap: 2vw;
     }
-    .main-section {
+    .main-section,
+    .subpage-desc {
         padding-left: 64px;
         padding-right: 64px;
         overflow: hidden;
@@ -588,7 +592,8 @@ input[type="submit"]:hover {
         max-width: 50%;
         padding: 0.5rem;
     }
-    .main-section {
+    .main-section,
+    .subpage-desc {
         padding-left: 32px;
         padding-right: 32px;
     }
@@ -611,7 +616,8 @@ input[type="submit"]:hover {
         max-width: 100%;
         padding: 0.25rem;
     }
-    .main-section {
+    .main-section,
+    .subpage-desc {
         padding-left: 24px;
         padding-right: 24px;
     }
